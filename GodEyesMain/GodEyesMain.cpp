@@ -57,7 +57,35 @@ BOOL __stdcall ConsoleHandler(DWORD cevent) {
 	case CTRL_CLOSE_EVENT:
 		
 	{
-		
+		printf("Terminate Process");
+		if (ProcInfo0.hProcess != NULL) {
+			TerminateProcess(ProcInfo0.hProcess, 0);
+		}
+		if (ProcInfo1.hProcess != NULL) {
+			TerminateProcess(ProcInfo1.hProcess, 0);
+		}
+		if (ProcInfo2.hProcess != NULL) {
+			TerminateProcess(ProcInfo2.hProcess, 0);
+		}
+		if (ProcInfo3.hProcess != NULL) {
+			TerminateProcess(ProcInfo3.hProcess, 0);
+		}
+		if (ProcInfo4.hProcess != NULL) {
+			TerminateProcess(ProcInfo4.hProcess, 0);
+		}
+		if (ProcInfo5.hProcess != NULL) {
+			TerminateProcess(ProcInfo5.hProcess, 0);
+		}
+		if (ProcInfo6.hProcess != NULL) {
+			TerminateProcess(ProcInfo6.hProcess, 0);
+		}
+		if (ProcInfo7.hProcess != NULL) {
+			TerminateProcess(ProcInfo7.hProcess, 0);
+		}
+		if (ProcInfo8.hProcess != NULL) {
+			TerminateProcess(ProcInfo8.hProcess, 0);
+		}
+		TerminateProcess(ProcInfo9.hProcess, 0);
 	}
 	break;
 
@@ -190,16 +218,22 @@ int main()
 		CreateProcess(NULL, tcmd5, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo5);
 		CreateProcess(NULL, tcmd6, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo6);
 		CreateProcess(NULL, tcmd7, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo7);
+		break;
+	case 9:
+		CreateProcess(NULL, tcmd0, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo0);
+		CreateProcess(NULL, tcmd1, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo1);
+		CreateProcess(NULL, tcmd2, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo2);
+		CreateProcess(NULL, tcmd3, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo3);
+		CreateProcess(NULL, tcmd4, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo4);
+		CreateProcess(NULL, tcmd5, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo5);
+		CreateProcess(NULL, tcmd6, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo6);
+		CreateProcess(NULL, tcmd7, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo7);
 		CreateProcess(NULL, tcmd8, NULL, NULL, NULL, NULL, NULL, NULL, &StartInfo, &ProcInfo8);
 		break;
 	}
 
 	//∑≈÷√≥Ã–Úº‡Ã˝
 	SetConsoleCtrlHandler(ConsoleHandler, TRUE);
-
-
-
-	
 
 	free(configlist);
 	free(cmd0);

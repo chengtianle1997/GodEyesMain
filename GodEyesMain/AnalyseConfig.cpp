@@ -35,11 +35,14 @@ void AnalyseConfig::AnalyseConfigCamera0(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera0Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera0Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera0Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera0Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera0Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera0Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera0Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera0Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera0Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera1(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -76,11 +79,14 @@ void AnalyseConfig::AnalyseConfigCamera1(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera1Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera1Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera1Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera1Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera1Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera1Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera1Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera1Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera1Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera2(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -116,11 +122,14 @@ void AnalyseConfig::AnalyseConfigCamera2(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera2Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera2Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera2Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera2Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera2Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera2Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera2Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera2Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera2Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera3(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -156,11 +165,14 @@ void AnalyseConfig::AnalyseConfigCamera3(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera3Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera3Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera3Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera3Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera3Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera3Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera3Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera3Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera3Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera4(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -196,11 +208,14 @@ void AnalyseConfig::AnalyseConfigCamera4(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera4Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera4Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera4Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera4Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera4Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera4Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera4Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera4Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera4Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera5(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -236,11 +251,14 @@ void AnalyseConfig::AnalyseConfigCamera5(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera5Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera5Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera5Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera5Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera5Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera5Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera5Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera5Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera5Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera6(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -276,11 +294,14 @@ void AnalyseConfig::AnalyseConfigCamera6(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera6Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera6Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera6Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera6Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera6Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera6Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera6Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera6Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera6Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera7(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -316,11 +337,14 @@ void AnalyseConfig::AnalyseConfigCamera7(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera7Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera7Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera7Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera7Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera7Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera7Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera7Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera7Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera7Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigCamera8(const char* Appadr, ConfigList *configlist, char* cmd)
@@ -356,16 +380,19 @@ void AnalyseConfig::AnalyseConfigCamera8(const char* Appadr, ConfigList *configl
 	sprintf(cmd, "%s%s%s", cmd, " --vo ", configlist->Camera8Vo);
 	sprintf(cmd, "%s%s%s", cmd, " --fx ", configlist->Camera8Fx);
 	sprintf(cmd, "%s%s%s", cmd, " --fy ", configlist->Camera8Fy);
+	sprintf(cmd, "%s%s%s", cmd, " --kx ", configlist->Camera8Kx);
+	sprintf(cmd, "%s%s%s", cmd, " --ky ", configlist->Camera8Ky);
 	sprintf(cmd, "%s%s%s", cmd, " -c ", configlist->Camera8Fcut);
 	//sprintf(cmd, "%s%s%s", cmd, " -b ", configlist->Camera8Brate);
 	//sprintf(cmd, "%s%s%s", cmd, " -l ", configlist->Camera8Btol);
 	//sprintf(cmd, "%s%s%s", cmd, " --ethread ", configlist->Camera8Ethread);
 	//sprintf(cmd, "%s%s%s", cmd, " --format ", configlist->Format);
+	sprintf(cmd, "%s%s%s", cmd, " --serveraddr ", configlist->ServerAddr);
 	sprintf(cmd, "%s%s%s", cmd, " -p ", configlist->Filepath);
 }
 void AnalyseConfig::AnalyseConfigServer(const char* Serveraddr, ConfigList *configlist, char *cmd)
 {
 
 	sprintf(cmd, "%s%s%s",Serveraddr, " -s ", configlist->ServerPort);
-	sprintf(cmd, "%s%s%s",cmd, " --ssar ", configlist->ServerAddr);
+	//sprintf(cmd, "%s%s%s",cmd, " --ssar ", configlist->ServerAddr);
 }

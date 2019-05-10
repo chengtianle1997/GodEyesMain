@@ -40,6 +40,8 @@ typedef struct {
 	char Camera0Vo[MAX_LEN];
 	char Camera0Fx[MAX_LEN];
 	char Camera0Fy[MAX_LEN];
+	char Camera0Kx[MAX_LEN];
+	char Camera0Ky[MAX_LEN];
 	char Camera0Emax[MAX_LEN];
 	char Camera0Emin[MAX_LEN];
 	char Camera0Xr[MAX_LEN];;
@@ -76,6 +78,8 @@ typedef struct {
 	char Camera1Vo[MAX_LEN];
 	char Camera1Fx[MAX_LEN];
 	char Camera1Fy[MAX_LEN];
+	char Camera1Kx[MAX_LEN];
+	char Camera1Ky[MAX_LEN];
 	char Camera1Emax[MAX_LEN];
 	char Camera1Emin[MAX_LEN];
 	char Camera1Xr[MAX_LEN];;
@@ -112,6 +116,8 @@ typedef struct {
 	char Camera2Vo[MAX_LEN];
 	char Camera2Fx[MAX_LEN];
 	char Camera2Fy[MAX_LEN];
+	char Camera2Kx[MAX_LEN];
+	char Camera2Ky[MAX_LEN];
 	char Camera2Emax[MAX_LEN];
 	char Camera2Emin[MAX_LEN];
 	char Camera2Xr[MAX_LEN];;
@@ -148,6 +154,8 @@ typedef struct {
 	char Camera3Vo[MAX_LEN];
 	char Camera3Fx[MAX_LEN];
 	char Camera3Fy[MAX_LEN];
+	char Camera3Kx[MAX_LEN];
+	char Camera3Ky[MAX_LEN];
 	char Camera3Emax[MAX_LEN];
 	char Camera3Emin[MAX_LEN];
 	char Camera3Xr[MAX_LEN];;
@@ -184,6 +192,8 @@ typedef struct {
 	char Camera4Vo[MAX_LEN];
 	char Camera4Fx[MAX_LEN];
 	char Camera4Fy[MAX_LEN];
+	char Camera4Kx[MAX_LEN];
+	char Camera4Ky[MAX_LEN];
 	char Camera4Emax[MAX_LEN];
 	char Camera4Emin[MAX_LEN];
 	char Camera4Xr[MAX_LEN];;
@@ -220,6 +230,8 @@ typedef struct {
 	char Camera5Vo[MAX_LEN];
 	char Camera5Fx[MAX_LEN];
 	char Camera5Fy[MAX_LEN];
+	char Camera5Kx[MAX_LEN];
+	char Camera5Ky[MAX_LEN];
 	char Camera5Emax[MAX_LEN];
 	char Camera5Emin[MAX_LEN];
 	char Camera5Xr[MAX_LEN];;
@@ -256,6 +268,8 @@ typedef struct {
 	char Camera6Vo[MAX_LEN];
 	char Camera6Fx[MAX_LEN];
 	char Camera6Fy[MAX_LEN];
+	char Camera6Kx[MAX_LEN];
+	char Camera6Ky[MAX_LEN];
 	char Camera6Emax[MAX_LEN];
 	char Camera6Emin[MAX_LEN];
 	char Camera6Xr[MAX_LEN];;
@@ -292,6 +306,8 @@ typedef struct {
 	char Camera7Vo[MAX_LEN];
 	char Camera7Fx[MAX_LEN];
 	char Camera7Fy[MAX_LEN];
+	char Camera7Kx[MAX_LEN];
+	char Camera7Ky[MAX_LEN];
 	char Camera7Emax[MAX_LEN];
 	char Camera7Emin[MAX_LEN];
 	char Camera7Xr[MAX_LEN];;
@@ -328,6 +344,8 @@ typedef struct {
 	char Camera8Vo[MAX_LEN];
 	char Camera8Fx[MAX_LEN];
 	char Camera8Fy[MAX_LEN];
+	char Camera8Kx[MAX_LEN];
+	char Camera8Ky[MAX_LEN];
 	char Camera8Emax[MAX_LEN];
 	char Camera8Emin[MAX_LEN];
 	char Camera8Xr[MAX_LEN];;

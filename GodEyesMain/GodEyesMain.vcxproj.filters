@@ -34,7 +34,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="config.ini">
+    <None Include="..\x64\Release\config.ini">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
