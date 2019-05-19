@@ -168,15 +168,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera0Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera0Kx"))
+			if (0 == strcmp(LineBuf, "Camera0K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera0Kx, pos);
+				strcpy(configlist->Camera0K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera0Ky"))
+			if (0 == strcmp(LineBuf, "Camera0K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera0Ky, pos);
+				strcpy(configlist->Camera0K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera0P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera0P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera0P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera0P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera0Emax"))
 			{
@@ -357,15 +367,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera1Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera1Kx"))
+			if (0 == strcmp(LineBuf, "Camera1K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera1Kx, pos);
+				strcpy(configlist->Camera1K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera1Ky"))
+			if (0 == strcmp(LineBuf, "Camera1K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera1Ky, pos);
+				strcpy(configlist->Camera1K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera1P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera1P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera1P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera1P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera1Emax"))
 			{
@@ -546,15 +566,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera2Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera2Kx"))
+			if (0 == strcmp(LineBuf, "Camera2K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera2Kx, pos);
+				strcpy(configlist->Camera2K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera2Ky"))
+			if (0 == strcmp(LineBuf, "Camera2K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera2Ky, pos);
+				strcpy(configlist->Camera2K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera2P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera2P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera2P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera2P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera2Emax"))
 			{
@@ -734,15 +764,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera3Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera3Kx"))
+			if (0 == strcmp(LineBuf, "Camera3K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera3Kx, pos);
+				strcpy(configlist->Camera3K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera3Ky"))
+			if (0 == strcmp(LineBuf, "Camera3K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera3Ky, pos);
+				strcpy(configlist->Camera3K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera3P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera3P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera3P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera3P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera3Emax"))
 			{
@@ -924,15 +964,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera4Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera4Kx"))
+			if (0 == strcmp(LineBuf, "Camera4K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera4Kx, pos);
+				strcpy(configlist->Camera4K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera4Ky"))
+			if (0 == strcmp(LineBuf, "Camera4K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera4Ky, pos);
+				strcpy(configlist->Camera4K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera4P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera4P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera4P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera4P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera4Emax"))
 			{
@@ -1113,15 +1163,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera5Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera5Kx"))
+			if (0 == strcmp(LineBuf, "Camera5K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera5Kx, pos);
+				strcpy(configlist->Camera5K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera5Ky"))
+			if (0 == strcmp(LineBuf, "Camera5K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera5Ky, pos);
+				strcpy(configlist->Camera5K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera5P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera5P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera5P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera5P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera5Emax"))
 			{
@@ -1301,15 +1361,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera6Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera6Kx"))
+			if (0 == strcmp(LineBuf, "Camera6K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera6Kx, pos);
+				strcpy(configlist->Camera6K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera6Ky"))
+			if (0 == strcmp(LineBuf, "Camera6K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera6Ky, pos);
+				strcpy(configlist->Camera6K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera6P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera6P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera6P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera6P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera6Emax"))
 			{
@@ -1489,15 +1559,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera7Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera7Kx"))
+			if (0 == strcmp(LineBuf, "Camera7K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera7Kx, pos);
+				strcpy(configlist->Camera7K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera7Ky"))
+			if (0 == strcmp(LineBuf, "Camera7K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera7Ky, pos);
+				strcpy(configlist->Camera7K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera7P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera7P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera7P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera7P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera7Emax"))
 			{
@@ -1677,15 +1757,25 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Camera8Fy, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera8Kx"))
+			if (0 == strcmp(LineBuf, "Camera8K1"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera8Kx, pos);
+				strcpy(configlist->Camera8K1, pos);
 			}
-			if (0 == strcmp(LineBuf, "Camera8Ky"))
+			if (0 == strcmp(LineBuf, "Camera8K2"))
 			{
 				for (; *pos == ' '; pos++) {}
-				strcpy(configlist->Camera8Ky, pos);
+				strcpy(configlist->Camera8K2, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera8P1"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera8P1, pos);
+			}
+			if (0 == strcmp(LineBuf, "Camera8P2"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->Camera8P2, pos);
 			}
 			if (0 == strcmp(LineBuf, "Camera8Emax"))
 			{
