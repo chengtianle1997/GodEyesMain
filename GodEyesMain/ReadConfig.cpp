@@ -1832,6 +1832,11 @@ void ReadFile(FILE *configFile, ConfigList *configlist)
 				for (; *pos == ' '; pos++) {}
 				strcpy(configlist->Format, pos);
 			}
+			if (0 == strcmp(LineBuf, "RemoteServer"))
+			{
+				for (; *pos == ' '; pos++) {}
+				strcpy(configlist->RemoteServer, pos);
+			}
 			if (0 == strcmp(LineBuf, "ServerPort"))
 			{
 				for (; *pos == ' '; pos++) {}

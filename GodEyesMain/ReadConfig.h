@@ -375,6 +375,7 @@ typedef struct {
 	char Camera8Ethread[MAX_LEN];
 	char Filepath[MAX_LEN];
 	char Format[MAX_LEN];
+	char RemoteServer[MAX_LEN];
 	char ServerPort[MAX_LEN];
 	char ServerAddr[MAX_LEN];
 
